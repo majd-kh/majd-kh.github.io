@@ -1,0 +1,72 @@
+
+body {color:rgb(245, 243, 142);
+    background-image: url("background-purple.png");}
+ul {list-style: none;}
+h1{text-align: center;
+background-color: rgba(25, 1, 34, 0.603);}
+footer ul{display : none;}
+footer ul {border:2px solid rgba(176, 125, 224, 0.712);
+    width: 120px;
+    height: 170px;
+    padding: 10px;
+}
+footer:hover ul{display : block;}
+footer ul li:hover {background-color:rgba(194, 247, 247, 0.801);}
+footer ul li{text-align: left;
+    background-color:rgb(212, 177, 233);
+    width: 95px;
+    height: 75px;
+    padding: 10px;}  
+
+p.see{  background-color: rgba(141, 220, 247, 0.582);
+    width: 150px;}
+
+p.vid { color: blue;
+background-color: rgba(141, 220, 247, 0.582);
+width: 150px;}
+
+footer { background-color: rgba(141, 220, 247, 0.582);
+width: 150px;}
+
+#sec1{background-color:rgba(25, 1, 34, 0.603);}
+#sec2{background-color: rgba(49, 2, 66, 0.603);}
+#sec3{background-color:rgba(72, 2, 97, 0.603);}
+
+@media (max-width: 575.98px) {
+    body{font-size: 10px;}
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    body{font-size: 15px;}
+  }
+   
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body{font-size: 18px;}
+  }
+  
+  @media (min-width: 992px) {
+    body{font-size: 22px;}
+    footer { width: 200px;}
+  }
+
+.probar{position: relative;
+width: 400 ; 
+height: 2.5em;
+background-color: rgb(241, 236, 190);
+border-radius: 3em;
+color: rgb(241, 236, 190);
+}
+.probar::before{content: attr(data-lable);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: .5em;
+  bottom: .5em;
+  top: .5em;
+  width: 30%; 
+  min-width: 10px;
+  max-width: calc(100%-1em);
+  background-color: rgb(218, 186, 248);
+  border-radius: 3em;
+  padding: 1em;
+}
